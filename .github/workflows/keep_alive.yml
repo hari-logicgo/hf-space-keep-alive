@@ -12,3 +12,4 @@ jobs:
       - name: Ping Hugging Face Space
         run: |
           curl -s https://logicgoinfotechspaces-expensecategorizenotes.hf.space/health
+          curl -s https://logicgoinfotechspaces-walletsyncocr.hf.space/health
