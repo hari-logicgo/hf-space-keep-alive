@@ -19,4 +19,4 @@ jobs:
           curl -s https://logicgoinfotechspaces-ai-financial-insights.hf.space/health
           curl -s https://logicgoinfotechspaces-duplicate-transaction-detection.hf.space/health
           curl -s https://logicgoinfotechspaces-early-overspending-alerts.hf.space/health
-          
+          curl -s https://logicgoinfotechspaces-beauty-camera-audit-log.hf.space/health
