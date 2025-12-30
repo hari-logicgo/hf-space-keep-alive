@@ -8,8 +8,10 @@ on:
 jobs:
   ping:
     runs-on: ubuntu-latest
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}  # only used for private spaces
     steps:
-      - name: Ping Hugging Face Space
+      - name: Ping public Hugging Face Spaces
         run: |
           curl -s https://logicgoinfotechspaces-expensecategorizenotes.hf.space/health
           curl -s https://logicgoinfotechspaces-walletsyncocr.hf.space/health
@@ -19,5 +21,8 @@ jobs:
           curl -s https://logicgoinfotechspaces-ai-financial-insights.hf.space/health
           curl -s https://logicgoinfotechspaces-duplicate-transaction-detection.hf.space/health
           curl -s https://logicgoinfotechspaces-early-overspending-alerts.hf.space/health
-          curl -s https://logicgoinfotechspaces-beauty-camera-audit-log.hf.space/health
-          curl -s https://logicgoinfotechspaces-beauty-camera-live-status.hf.space/health
+
+      - name: Ping private Hugging Face Spaces
+        run: |
+          curl -H "Authorization: Bearer $HF_TOKEN" -s https://logicgoinfotechspaces-beauty-camera-audit-log.hf.space/health
+          curl -H "Authorization: Bearer $HF_TOKEN" -s https://logicgoinfotechspaces-beauty-camera-live-status.hf.space/health
