@@ -13,3 +13,10 @@ jobs:
         run: |
           curl -s https://logicgoinfotechspaces-expensecategorizenotes.hf.space/health
           curl -s https://logicgoinfotechspaces-walletsyncocr.hf.space/health
+          curl -s https://logicgoinfotechspaces-smart-budget-recommendation.hf.space/health
+          curl -s https://logicgoinfotechspaces-expense-prediction.hf.space/health
+          curl -s https://logicgoinfotechspaces-financial-health-score.hf.space/health
+          curl -s https://logicgoinfotechspaces-ai-financial-insights.hf.space/health
+          curl -s https://logicgoinfotechspaces-duplicate-transaction-detection.hf.space/health
+          curl -s https://logicgoinfotechspaces-early-overspending-alerts.hf.space/health
+          
